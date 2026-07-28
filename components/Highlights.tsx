@@ -27,7 +27,7 @@ const ITEMS = [
 
 export default function Highlights() {
   return (
-    <section className="bg-brand-dark px-6 py-10 sm:px-10 lg:px-16">
+    <section className="flex flex-1 flex-col justify-center bg-brand-dark px-6 py-10 sm:px-10 lg:px-16">
       <h2 className="sr-only">Career fair highlights</h2>
       <ul className="mx-auto grid max-w-6xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {ITEMS.map((item) => (
