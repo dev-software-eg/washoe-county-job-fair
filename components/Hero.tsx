@@ -6,30 +6,30 @@ export default function Hero() {
     <section className="relative overflow-hidden bg-brand-blue px-6 pt-6 pb-10 sm:px-10 lg:px-16 lg:pt-10">
       <div className="mx-auto max-w-6xl lg:pr-72">
         <div className="max-w-2xl">
-          <p className="font-slab text-xl text-white sm:text-2xl">
+          <p className="font-slab text-2xl text-white sm:text-3xl">
             Northern Nevada&rsquo;s Largest
           </p>
 
           <div className="mt-4 inline-block bg-brand-dark px-4 py-3">
-            <h1 className="font-slab text-2xl font-bold sm:text-3xl lg:text-4xl">
+            <h1 className="font-slab text-3xl font-bold sm:text-4xl lg:text-5xl">
               <span className="text-brand-yellow underline">NO</span>
               <span className="text-brand-yellow">-COST </span>
               <span className="text-white">CAREER FAIR</span>
             </h1>
           </div>
 
-          <p className="mt-6 text-base font-bold text-brand-yellow sm:text-lg">
+          <p className="mt-6 text-xl font-bold text-brand-yellow sm:text-xl lg:text-2xl">
             MONDAY, AUGUST 24, 2026{" "}
             <span className="font-normal">| 11am&ndash;2pm</span>
           </p>
 
-          <p className="mt-6 text-lg leading-relaxed text-brand-light ">
+          <p className="mt-6 text-xl leading-relaxed text-brand-light ">
             Reno-Sparks Convention Center
             <br />
             4590 S Virginia St, Reno, NV
           </p>
 
-          <h2 className="mt-6 text-base font-bold text-white sm:text-lg">
+          <h2 className="mt-6 text-lg font-bold text-white sm:text-xl">
             This is the event that starts your next chapter!{" "}
             <span className="font-bold italic text-brand-yellow">
               Don&rsquo;t miss it.
