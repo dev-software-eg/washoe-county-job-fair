@@ -30,7 +30,7 @@ export default function RootLayout({
       lang="en"
       className={`${roboto.variable} ${robotoSlab.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body className="min-h-screen flex flex-col font-sans">{children}</body>
     </html>
   );
 }

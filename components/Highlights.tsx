@@ -1,7 +1,7 @@
 const ITEMS = [
   {
     title: "90+ employers",
-    body: "will be on site looking to hire",
+    body: "Will be on site looking to hire",
   },
   {
     title: "On-the-spot offers",
@@ -35,7 +35,7 @@ export default function Highlights() {
             <p className="font-slab text-lg font-bold text-brand-yellow">
               {item.title}
             </p>
-            <p className="mt-1 text-sm leading-relaxed text-brand-light">
+            <p className="mt-1 text-md leading-relaxed text-brand-light">
               {item.body}
             </p>
           </li>

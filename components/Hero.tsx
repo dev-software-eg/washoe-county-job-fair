@@ -23,7 +23,7 @@ export default function Hero() {
             <span className="font-normal">| 11am&ndash;2pm</span>
           </p>
 
-          <p className="mt-6 text-sm leading-relaxed text-brand-light sm:text-base">
+          <p className="mt-6 text-lg leading-relaxed text-brand-light ">
             Reno-Sparks Convention Center
             <br />
             4590 S Virginia St, Reno, NV
@@ -44,6 +44,15 @@ export default function Hero() {
           </a>
         </div>
       </div>
+      {/* <div className="hidden lg:absolute lg:top-4 lg:right-50 lg:block lg:w-72 md:absolute md:top-0 md:right-80 md:block md:w-72">
+        <Image
+          src="/logos/wc-seal.png"
+          alt="Washoe County seal"
+          width={598}
+          height={598}
+          className="h-36 w-auto object-contain"
+        />
+      </div> */}
       <div className="hidden lg:absolute lg:top-0 lg:-right-1 lg:block lg:w-72 md:absolute md:top-0 md:-right-1 md:block md:w-72">
         <Image
           src={signPostImage}
