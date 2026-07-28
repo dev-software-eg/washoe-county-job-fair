@@ -103,12 +103,13 @@ export default function EmployerGrid() {
               key={employer.file}
               className="h-24 rounded-lg bg-white shadow-sm"
             >
-              <a
+              {/* Removing links per Ed call */}
+              {/* <a
                 href={employer.link ?? "#"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`flex h-full w-full items-center justify-center ${employer.padding ?? "p-4"}`}
-              >
+              > */}
                 <Image
                   src={`/logos/${encodeURIComponent(employer.file)}`}
                   alt={employer.name}
@@ -116,7 +117,7 @@ export default function EmployerGrid() {
                   height={employer.height}
                   className="h-full w-full object-contain"
                 />
-              </a>
+              {/* </a> */}
             </li>
           ))}
         </ul>
