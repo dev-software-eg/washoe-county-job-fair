@@ -44,7 +44,7 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      <div className="hidden lg:absolute lg:top-0 lg:-right-1 lg:block lg:w-72">
+      <div className="hidden lg:absolute lg:top-0 lg:-right-1 lg:block lg:w-72 md:absolute md:top-0 md:-right-1 md:block md:w-72">
         <Image
           src={signPostImage}
           alt="Signpost pointing to industries hiring: health care, education, mining, skilled trades, manufacturing, logistics, hospitality, government"
