@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+:root {
+  --color-brand-yellow: #fcd52b;
+  --color-brand-blue: #0476a8;
+  --color-brand-dark: #033b4c;
+  --color-brand-light: #f1f6f8;
+}
+
+@theme inline {
+  --color-brand-yellow: var(--color-brand-yellow);
+  --color-brand-blue: var(--color-brand-blue);
+  --color-brand-dark: var(--color-brand-dark);
+  --color-brand-light: var(--color-brand-light);
+  --font-slab: var(--font-roboto-slab);
+  --font-sans: var(--font-roboto);
+}
+
+body {
+  background: var(--color-brand-blue);
+  color: var(--color-brand-light);
+}
