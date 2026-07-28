@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Roboto, Roboto_Slab } from "next/font/google";
+import { VercelToolbar } from "@vercel/toolbar/next";
 import "./globals.css";
 
 const roboto = Roboto({
@@ -25,12 +26,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const shouldInjectToolbar = process.env.NODE_ENV === "development";
+
   return (
     <html
       lang="en"
       className={`${roboto.variable} ${robotoSlab.variable} h-full antialiased`}
     >
-      <body className="min-h-screen flex flex-col font-sans">{children}</body>
+      <body className="min-h-screen flex flex-col font-sans">
+        {children}
+        {shouldInjectToolbar && <VercelToolbar />}
+      </body>
     </html>
   );
 }
