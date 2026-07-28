@@ -99,14 +99,15 @@ export default function EmployerGrid() {
 
         <ul className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
           {EMPLOYERS.map((employer) => (
-            <a
-              href={employer.link ?? "#"}
-              target="_blank"
-              rel="noopener noreferrer"
+            <li
+              key={employer.file}
+              className="h-24 rounded-lg bg-white shadow-sm"
             >
-              <li
-                key={employer.file}
-                className={`flex h-24 items-center justify-center rounded-lg bg-white shadow-sm ${employer.padding ?? "p-4"}`}
+              <a
+                href={employer.link ?? "#"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`flex h-full w-full items-center justify-center ${employer.padding ?? "p-4"}`}
               >
                 <Image
                   src={`/logos/${encodeURIComponent(employer.file)}`}
@@ -115,8 +116,8 @@ export default function EmployerGrid() {
                   height={employer.height}
                   className="h-full w-full object-contain"
                 />
-              </li>
-            </a>
+              </a>
+            </li>
           ))}
         </ul>
       </div>
