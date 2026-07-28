@@ -35,7 +35,7 @@ export default function Highlights() {
             <p className="font-slab text-lg font-bold text-brand-yellow">
               {item.title}
             </p>
-            <p className="mt-1 text-md leading-relaxed text-brand-light">
+            <p className="mt-1 text-base leading-relaxed text-brand-light">
               {item.body}
             </p>
           </li>
