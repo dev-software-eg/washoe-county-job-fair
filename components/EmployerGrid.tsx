@@ -26,7 +26,7 @@ export default function EmployerGrid() {
   return (
     <section className="flex flex-1 flex-col justify-center bg-brand-light px-6 py-10 sm:px-10 lg:px-16">
       <div className="mx-auto max-w-6xl">
-        <h2 className="text-md font-bold uppercase tracking-wide text-brand-dark">
+        <h2 className="text-md font-bold uppercase tracking-wide text-brand-blue">
           Just a few of the 90+ employers on site:
         </h2>
 
