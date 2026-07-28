@@ -15,10 +15,29 @@ const robotoSlab = Roboto_Slab({
   weight: ["400", "700"],
 });
 
+const title = "No-Cost Career Fair | Washoe County | Aug 24, 2026";
+const description =
+  "Northern Nevada's largest no-cost career fair. Monday, August 24, 2026, 11am–2pm at the Reno-Sparks Convention Center. 90+ employers hiring on the spot.";
+
+// Update NEXT_PUBLIC_SITE_URL once the production domain is assigned.
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com";
+
 export const metadata: Metadata = {
-  title: "No-Cost Career Fair | Washoe County | Aug 24, 2026",
-  description:
-    "Northern Nevada's largest no-cost career fair. Monday, August 24, 2026, 11am–2pm at the Reno-Sparks Convention Center. 90+ employers hiring on the spot.",
+  metadataBase: new URL(siteUrl),
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    type: "website",
+    siteName: "Washoe County No-Cost Career Fair",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
 };
 
 export default function RootLayout({
