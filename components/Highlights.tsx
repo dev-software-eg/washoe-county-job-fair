@@ -8,7 +8,7 @@ const ITEMS = [
     body: "Potential on-the-spot interviews and job offers",
   },
   {
-    title: "Every industry",
+    title: "Diverse industry",
     body: "Explore jobs in a range of industries",
   },
   {
