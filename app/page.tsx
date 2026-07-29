@@ -48,7 +48,8 @@ export default function Home() {
       />
       <Hero />
       <Highlights />
-      <WhatToExpect />
+      {/* Removing until copy defined */}
+      {/* <WhatToExpect /> */}
       <EmployerGrid />
       <EmployerTable />
       <Footer />
