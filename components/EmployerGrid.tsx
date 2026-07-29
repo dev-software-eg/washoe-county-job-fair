@@ -86,6 +86,7 @@ const EMPLOYERS: Employer[] = [
     link: "https://www.unr.edu/",
     width: 2185,
     height: 1584,
+    padding: "p-0",
   },
 ];
 
@@ -101,7 +102,7 @@ export default function EmployerGrid() {
           {EMPLOYERS.map((employer) => (
             <li
               key={employer.file}
-              className="h-24 rounded-lg bg-white shadow-sm"
+              className={`h-24 rounded-lg bg-white shadow-sm ${employer.padding ?? "p-4"}`}
             >
               {/* Removing links per Ed call */}
               {/* <a
