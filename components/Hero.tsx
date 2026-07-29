@@ -4,7 +4,7 @@ import signPostImage from "../logos/road-sign.png";
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-brand-blue px-6 pt-0 pb-5 md:pt-15 md:px-5 3xl:px-16! min-h-140">
-      <div className="relative z-0 mx-auto mt-5 block w-40 md:absolute md:mt-0 md:mx-0 md:top-5 md:right-8 md:w-72 3xl:top-40! 3xl:left-30! 3xl:right-auto!">
+      <div className="relative z-0 mx-auto mt-5 block w-40 md:absolute md:mt-0 md:mx-0 md:top-5 md:right-48 md:w-72 3xl:top-40! 3xl:left-30! 3xl:right-auto!">
         <Image
           src="/logos/wc-seal.png"
           alt="Washoe County seal"
