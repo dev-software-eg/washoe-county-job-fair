@@ -1,6 +1,8 @@
 import Hero from "@/components/Hero";
 import Highlights from "@/components/Highlights";
+import WhatToExpect from "@/components/WhatToExpect";
 import EmployerGrid from "@/components/EmployerGrid";
+import EmployerTable from "@/components/EmployerTable";
 import Footer from "@/components/Footer";
 
 const eventJsonLd = {
@@ -46,7 +48,9 @@ export default function Home() {
       />
       <Hero />
       <Highlights />
+      <WhatToExpect />
       <EmployerGrid />
+      <EmployerTable />
       <Footer />
     </main>
   );
