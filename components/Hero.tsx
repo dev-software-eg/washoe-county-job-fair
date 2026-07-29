@@ -3,8 +3,8 @@ import signPostImage from "../logos/road-sign.png";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-brand-blue px-6 pt-0 pb-5 md:pt-15 md:px-5 3xl:px-16! min-h-140">
-      <div className="relative z-0 mx-auto mt-5 block w-40 md:absolute md:mt-0 md:mx-0 md:top-5 md:right-48 md:w-72 3xl:top-40! 3xl:left-30! 3xl:right-auto!">
+    <section className="relative overflow-hidden bg-brand-blue px-6 pt-0 pb-15 hero-md:pt-15 hero-md:px-5 3xl:px-16! min-h-140">
+      <div className="relative z-0 mx-auto mt-5 block w-40 hero-md:absolute hero-md:mt-0 hero-md:mx-0 hero-md:top-5 hero-md:right-48 hero-md:w-72 3xl:top-40! 3xl:left-30! 3xl:right-auto!">
         <Image
           src="/logos/wc-seal.png"
           alt="Washoe County seal"
@@ -13,7 +13,7 @@ export default function Hero() {
           className="h-62 w-auto object-contain"
         />
       </div>
-      <div className="hidden md:absolute md:top-30 md:-right-1 md:z-0 md:block md:w-72">
+      <div className="hidden hero-md:absolute hero-md:top-30 hero-md:-right-1 hero-md:z-0 hero-md:block hero-md:w-72">
         <Image
           src={signPostImage}
           alt="Signpost pointing to industries hiring: health care, education, mining, skilled trades, manufacturing, logistics, hospitality, government"
@@ -21,8 +21,8 @@ export default function Hero() {
           priority
         />
       </div>
-      <div className="relative z-10 mx-auto max-w-6xl text-center md:mx-0 md:text-left 3xl:mx-auto! 3xl:text-center!">
-        <div className="mx-auto max-w-2xl md:mx-0 3xl:mx-auto!">
+      <div className="relative z-10 mx-auto max-w-6xl text-center hero-md:mx-0 hero-md:text-left 3xl:mx-auto! 3xl:text-center!">
+        <div className="mx-auto max-w-2xl hero-md:mx-0 3xl:mx-auto!">
           <p className="font-slab text-2xl text-white sm:text-3xl">
             Northern Nevada&rsquo;s Largest
           </p>
