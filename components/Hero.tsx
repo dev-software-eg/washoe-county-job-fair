@@ -41,9 +41,17 @@ export default function Hero() {
           </p>
 
           <p className="mt-6 text-2xl leading-relaxed text-brand-light ">
-            Reno-Sparks Convention Center
-            <br />
-            4590 S Virginia St, Reno, NV
+            <a
+              href="https://maps.google.com/?q=Reno-Sparks+Convention+Center,+4590+S+Virginia+St,+Reno,+NV"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+              aria-label="Reno-Sparks Convention Center, 4590 South Virginia Street, Reno, Nevada — open in Google Maps"
+            >
+              Reno-Sparks Convention Center
+              <br />
+              4590 S Virginia St, Reno, NV
+            </a>
           </p>
 
           <h2 className="mt-6 text-2xl font-bold text-white sm:text-2xl ">
@@ -58,8 +66,21 @@ export default function Hero() {
               For more information, contact:
             </h3>
             <span className="text-lg text-brand-light sm:text-lg lg:text-xl block pt-2">
-              775-284-9660 |{" "}
-              <a href="mailto:biz-hub@detr.nv.gov">biz-hub@detr.nv.gov</a>
+              <a
+                href="tel:+17752849660"
+                className="underline"
+                aria-label="Call 775-284-9660"
+              >
+                775-284-9660
+              </a>{" "}
+              <span aria-hidden="true">|</span>{" "}
+              <a
+                href="mailto:biz-hub@detr.nv.gov"
+                className="underline"
+                aria-label="Email biz-hub@detr.nv.gov"
+              >
+                biz-hub@detr.nv.gov
+              </a>
             </span>
           </div>
         </div>
