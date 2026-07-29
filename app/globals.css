@@ -8,6 +8,7 @@
 }
 
 @theme inline {
+  --breakpoint-3xl: 1301px;
   --color-brand-yellow: var(--color-brand-yellow);
   --color-brand-blue: var(--color-brand-blue);
   --color-brand-dark: var(--color-brand-dark);
