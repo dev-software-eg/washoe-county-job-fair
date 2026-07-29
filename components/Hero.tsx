@@ -46,11 +46,11 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               className="underline"
-              aria-label="Reno-Sparks Convention Center, 4590 South Virginia Street, Reno, Nevada — open in Google Maps"
             >
               Reno-Sparks Convention Center
               <br />
               4590 S Virginia St, Reno, NV
+              <span className="sr-only"> (opens in Google Maps)</span>
             </a>
           </p>
 
