@@ -86,7 +86,7 @@ const EMPLOYERS: Employer[] = [
     link: "https://www.unr.edu/",
     width: 2185,
     height: 1584,
-    padding: "p-0",
+    padding: "p-2",
   },
 ];
 
