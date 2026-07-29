@@ -100,7 +100,8 @@ export default function Hero() {
               For more information, contact:
             </h3>
             <span className="text-lg text-brand-light sm:text-lg lg:text-xl block pt-2">
-              775-284-9660 | biz-hub@detr.nv.gov
+              775-284-9660 |{" "}
+              <a href="mailto:biz-hub@detr.nv.gov">biz-hub@detr.nv.gov</a>
             </span>
           </div>
         </div>
