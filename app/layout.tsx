@@ -29,6 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title,
     description,
+    url: siteUrl,
     type: "website",
     siteName: "Washoe County No-Cost Career Fair",
     locale: "en_US",
