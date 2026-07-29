@@ -8,6 +8,7 @@
 }
 
 @theme inline {
+  --breakpoint-hero-md: 941px;
   --breakpoint-3xl: 1301px;
   --color-brand-yellow: var(--color-brand-yellow);
   --color-brand-blue: var(--color-brand-blue);
