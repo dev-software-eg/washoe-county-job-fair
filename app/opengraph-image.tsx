@@ -10,10 +10,10 @@ export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 export default async function Image() {
-  const signpost = await readFile(
-    join(process.cwd(), "og-assets/signpost-small.png")
+  const wcSeal = await readFile(
+    join(process.cwd(), "public/logos/wc-seal.png")
   );
-  const signpostSrc = `data:image/png;base64,${signpost.toString("base64")}`;
+  const wcSealSrc = `data:image/png;base64,${wcSeal.toString("base64")}`;
 
   return new ImageResponse(
     (
@@ -28,11 +28,11 @@ export default async function Image() {
         }}
       >
         <img
-          src={signpostSrc}
+          src={wcSealSrc}
           alt=""
-          width={374}
-          height={630}
-          style={{ position: "absolute", top: 0, right: -30 }}
+          width={300}
+          height={300}
+          style={{ position: "absolute", top: 165, right: 60 }}
         />
 
         <div
@@ -40,7 +40,7 @@ export default async function Image() {
             display: "flex",
             flexDirection: "column",
             width: "63%",
-            padding: "56px 0 56px 64px",
+            padding: "100px 0 56px 64px",
           }}
         >
           <div style={{ display: "flex", fontSize: 30, color: "#FFFFFF" }}>
@@ -91,7 +91,7 @@ export default async function Image() {
           <div
             style={{
               display: "flex",
-              marginTop: "auto",
+              marginTop: 48,
               fontSize: 26,
               fontWeight: 700,
               fontStyle: "italic",
