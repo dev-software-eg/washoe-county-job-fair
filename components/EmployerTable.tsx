@@ -88,6 +88,7 @@ const EMPLOYERS = [
 "Washoe County",
 "Washoe County - Community Services",
 "Washoe County - Human Resource",
+"Washoe County - Human Services",
 "Washoe County - Juvenile Services",
 "Washoe County - Regional Animal Services",
 "Washoe County School District",
