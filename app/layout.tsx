@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto, Roboto_Slab } from "next/font/google";
 import { VercelToolbar } from "@vercel/toolbar/next";
+import { Analytics } from "@vercel/analytics/next"
 import "./globals.css";
 
 const roboto = Roboto({
@@ -55,6 +56,7 @@ export default function RootLayout({
     >
       <body className="min-h-screen flex flex-col font-sans">
         {children}
+        <Analytics />
         {shouldInjectToolbar && <VercelToolbar />}
       </body>
     </html>
