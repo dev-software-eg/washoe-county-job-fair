@@ -30,6 +30,12 @@ const eventJsonLd = {
     "@type": "GovernmentOrganization",
     name: "Washoe County",
     url: "https://www.washoecounty.gov/",
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+1-775-284-9660",
+      email: "biz-hub@detr.nv.gov",
+      contactType: "customer service",
+    },
   },
   offers: {
     "@type": "Offer",
