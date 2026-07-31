@@ -48,7 +48,7 @@ export default function Home() {
       />
       <Hero />
       <Highlights />
-      {/* <WhatToExpect /> */}
+      <WhatToExpect />
       <EmployerGrid />
       <EmployerTable />
       <Footer />
