@@ -48,8 +48,8 @@ export default function Home() {
       />
       <Hero />
       <Highlights />
-      <WhatToExpect />
       <EmployerGrid />
+      <WhatToExpect />
       <EmployerTable />
       <Footer />
     </main>
