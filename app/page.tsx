@@ -53,9 +53,10 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(eventJsonLd) }}
       />
       <Hero />
-      <Highlights />
-      <EmployerGrid />
       <WhatToExpect />
+      {/* <Highlights /> */}
+      <EmployerGrid />
+
       <EmployerTable />
       <Footer />
     </main>

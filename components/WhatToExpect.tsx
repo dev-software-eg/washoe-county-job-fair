@@ -1,55 +1,92 @@
 type ExpectItem = {
   title: string;
-  body: string;
+  body: string | React.ReactNode;
 };
 
 const JOB_SEEKER_ITEMS: ExpectItem[] = [
   {
-    title: "PLACEHOLDER CONTENT: Bring your resume",
-    body: "Bring multiple copies of your resume.",
+    title: "90+ employers",
+    body: "Will be on site looking to hire",
   },
   {
-    title: "Dress to impress",
-    body: "Dress professionally and bring a positive attitude.",
+    title: "On-the-spot offers",
+    body: "Potential on-the-spot interviews and job offers",
   },
   {
-    title: "Meet employers",
-    body: "Meet face-to-face with 90+ hiring employers.",
+    title: "Diverse industries",
+    body: "Explore jobs in a range of industries",
   },
   {
-    title: "Free career coaching",
-    body: "Access free on-site career coaching and resume help.",
+    title: "Career coaching",
+    body: "On-site career coaching, resume writing & interview support",
+  },
+  {
+    title: "Free training",
+    body: "Learn about free job training & job-related financial support",
+  },
+  {
+    title: "Accessible support",
+    body: "Career guidance and resources for those with disabilities",
   },
 ];
 
 const EMPLOYER_ITEMS: ExpectItem[] = [
   {
     title: "Setup",
-    body: "Facilities open Sunday, August 23 (10am–1pm) and Monday, August 24 (8:30am until event start). You'll get your table number at sign-in — tables are 8' with two chairs, so bring your own tablecloth and display materials. EmployNV staff will help with setup and circulate throughout the event.",
+    body: (
+      <div style={{ whiteSpace: "pre-line" }}>
+        <div>Please set up your table before the event.</div>
+        <div>
+          <div> Facilities will be open:</div>
+          <div>
+            <strong>Sunday, August 23 | 10am–1pm</strong>
+          </div>
+          <div>
+            <strong>Monday, August 24 | 8:30am until event start</strong>
+          </div>
+          <br />
+        </div>
+        <div>
+          You will receive your table number during sign-in. Tables are 8’ and
+          will have two chairs. Please provide your own tablecloth, display
+          items, and/or promotional materials.
+        </div>
+        <br />
+        {/* <div>
+          EmployNV staff will greet you and assist with setup. If you need
+          support during the event, our staff will be available and circulating
+          throughout the space.
+        </div> */}
+      </div>
+    ),
   },
   {
     title: "Power & Wi-Fi",
-    body: "We cannot guarantee power or Wi-Fi access. If you plan to use a laptop, bring a hotspot. Printers will not be available on-site.",
+    body: `We cannot guarantee power or Wi‑Fi access. If you plan to use a laptop, we recommend bringing a hotspot. Printers will not be available onsite.`,
   },
   {
-    title: "Job Opening Requirement",
-    body: "Job seekers receive a list of employers with current openings. Employers must post at least one opening to EmployNV.gov before the event, or risk removal from the event.",
+    title: "Job opening requirement",
+    body: `Career seekers will receive a list of employers with current job openings. Failure to provide at least one job opening to EmployNV.gov before the event could result in removal from the event.`,
   },
   {
-    title: "On-site Interviews",
-    body: "We provide space for employers who want to conduct interviews with candidates at the event.",
+    title: "On-site interviews",
+    body: `We will provide space for employers to conduct interviews with candidates at the event if desired.`,
   },
   {
-    title: "Interview Follow-Up",
-    body: "We aim to facilitate on-site interviews where possible. If follow-up interviews will be at your company's location, please advise applicants.",
+    title: "Interview follow-up",
+    body: `The career fair aims to facilitate on-site interviews where possible. If follow-up interviews will be at your company’s locations, please advise applicants.`,
   },
   {
-    title: "Time Commitment",
-    body: "We ask that all employer representatives stay for the full event. We encourage you to bring food and drinks to stay comfortable.",
+    title: "Time commitment",
+    body: `We ask that all employer representatives remain for the full duration of the career fair. We encourage you to bring food and drinks to stay comfortable throughout the event.`,
   },
   {
-    title: "Employer Survey",
-    body: "At the end of the event, we'll ask you to complete a brief survey. Your feedback helps us improve future events for employers and job seekers alike.",
+    title: "Employer survey",
+    body: `At the end of the event, we’ll ask you to complete a brief survey. Your feedback helps us improve future events and better serve both employers and job seekers.`,
+  },
+  {
+    title: "Support",
+    body: `EmployNV staff will greet you and assist with setup. If you need support during the event, our staff will be available and circulating throughout the space.`,
   },
 ];
 
@@ -61,9 +98,9 @@ function ExpectGrid({ items }: { items: ExpectItem[] }) {
           <p className="font-slab text-lg font-bold text-brand-yellow">
             {item.title}
           </p>
-          <p className="mt-1 text-sm leading-relaxed text-brand-light sm:text-base">
+          <div className="mt-1 whitespace-pre-line text-sm leading-relaxed text-brand-light sm:text-base">
             {item.body}
-          </p>
+          </div>
         </li>
       ))}
     </ul>
