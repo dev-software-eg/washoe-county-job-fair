@@ -141,7 +141,7 @@ export default function WhatToExpect() {
           />
           <label
             htmlFor="wte-jobseekers"
-            className="cursor-pointer rounded-full px-4 py-1.5 text-sm font-bold text-brand-light peer-checked/js:bg-brand-yellow peer-checked/js:text-brand-dark peer-focus-visible/js:ring-2 peer-focus-visible/js:ring-brand-yellow sm:text-base"
+            className="cursor-pointer rounded-full px-4 py-1.5 text-sm font-bold text-brand-light transition-colors peer-checked/js:bg-brand-yellow peer-checked/js:text-brand-dark peer-not-checked/js:hover:bg-white/10 peer-not-checked/js:hover:text-white peer-focus-visible/js:ring-2 peer-focus-visible/js:ring-brand-yellow sm:text-base"
           >
             Job Seekers
           </label>
@@ -154,7 +154,7 @@ export default function WhatToExpect() {
           />
           <label
             htmlFor="wte-employers"
-            className="cursor-pointer rounded-full px-4 py-1.5 text-sm font-bold text-brand-light peer-checked/emp:bg-brand-yellow peer-checked/emp:text-brand-dark peer-focus-visible/emp:ring-2 peer-focus-visible/emp:ring-brand-yellow sm:text-base"
+            className="cursor-pointer rounded-full px-4 py-1.5 text-sm font-bold text-brand-light transition-colors peer-checked/emp:bg-brand-yellow peer-checked/emp:text-brand-dark peer-not-checked/emp:hover:bg-white/10 peer-not-checked/emp:hover:text-white peer-focus-visible/emp:ring-2 peer-focus-visible/emp:ring-brand-yellow sm:text-base"
           >
             Employers
           </label>
