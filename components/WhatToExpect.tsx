@@ -30,36 +30,37 @@ const JOB_SEEKER_ITEMS: ExpectItem[] = [
   },
 ];
 
-const EMPLOYER_ITEMS: ExpectItem[] = [
-  {
-    title: "Setup",
-    body: (
-      <div style={{ whiteSpace: "pre-line" }}>
-        <div>Please set up your table before the event.</div>
+const EMPLOYER_SETUP: ExpectItem = {
+  title: "Setup",
+  body: (
+    <div style={{ whiteSpace: "pre-line" }}>
+      <div>Please set up your table before the event.</div>
+      <div>
+        <div> Facilities will be open:</div>
         <div>
-          <div> Facilities will be open:</div>
-          <div>
-            <strong>Sunday, August 23 | 10am–1pm</strong>
-          </div>
-          <div>
-            <strong>Monday, August 24 | 8:30am until event start</strong>
-          </div>
-          <br />
+          <strong>Sunday, August 23 | 10am–1pm</strong>
         </div>
         <div>
-          You will receive your table number during sign-in. Tables are 8’ and
-          will have two chairs. Please provide your own tablecloth, display
-          items, and/or promotional materials.
+          <strong>Monday, August 24 | 8:30am until event start</strong>
         </div>
         <br />
-        {/* <div>
-          EmployNV staff will greet you and assist with setup. If you need
-          support during the event, our staff will be available and circulating
-          throughout the space.
-        </div> */}
       </div>
-    ),
-  },
+      <div>
+        You will receive your table number during sign-in. Tables are 8’ and
+        will have two chairs. Please provide your own tablecloth, display items,
+        and/or promotional materials.
+      </div>
+      <br />
+      <div>
+        EmployNV staff will greet you and assist with setup. If you need support
+        during the event, our staff will be available and circulating throughout
+        the space.
+      </div>
+    </div>
+  ),
+};
+
+const EMPLOYER_ITEMS: ExpectItem[] = [
   {
     title: "Power & Wi-Fi",
     body: `We cannot guarantee power or Wi‑Fi access. If you plan to use a laptop, we recommend bringing a hotspot. Printers will not be available onsite.`,
@@ -84,15 +85,30 @@ const EMPLOYER_ITEMS: ExpectItem[] = [
     title: "Employer survey",
     body: `At the end of the event, we’ll ask you to complete a brief survey. Your feedback helps us improve future events and better serve both employers and job seekers.`,
   },
-  {
-    title: "Support",
-    body: `EmployNV staff will greet you and assist with setup. If you need support during the event, our staff will be available and circulating throughout the space.`,
-  },
 ];
 
-function ExpectGrid({ items }: { items: ExpectItem[] }) {
+function EmployerSetupCard({ item }: { item: ExpectItem }) {
   return (
-    <ul className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="lg:w-72 lg:shrink-0 xl:w-80">
+      <p className="font-slab text-lg font-bold text-brand-yellow">
+        {item.title}
+      </p>
+      <div className="mt-1 whitespace-pre-line text-sm leading-relaxed text-brand-light sm:text-base">
+        {item.body}
+      </div>
+    </div>
+  );
+}
+
+function ExpectGrid({
+  items,
+  className = "grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3",
+}: {
+  items: ExpectItem[];
+  className?: string;
+}) {
+  return (
+    <ul className={className}>
       {items.map((item) => (
         <li key={item.title}>
           <p className="font-slab text-lg font-bold text-brand-yellow">
@@ -147,8 +163,12 @@ export default function WhatToExpect() {
         <div className="mt-8 hidden group-has-[#wte-jobseekers:checked]:block">
           <ExpectGrid items={JOB_SEEKER_ITEMS} />
         </div>
-        <div className="mt-8 hidden group-has-[#wte-employers:checked]:block">
-          <ExpectGrid items={EMPLOYER_ITEMS} />
+        <div className="mt-8 hidden flex-col gap-8 group-has-[#wte-employers:checked]:flex lg:flex-row">
+          <EmployerSetupCard item={EMPLOYER_SETUP} />
+          <ExpectGrid
+            items={EMPLOYER_ITEMS}
+            className="grid flex-1 grid-cols-1 gap-8 sm:grid-cols-2"
+          />
         </div>
       </div>
     </section>
