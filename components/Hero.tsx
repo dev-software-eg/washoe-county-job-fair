@@ -23,6 +23,9 @@ export default function Hero() {
       </div>
       <div className="relative z-10 mx-auto max-w-6xl text-center hero-md:mx-0 hero-md:text-left 3xl:mx-auto! 3xl:text-center!">
         <div className="mx-auto max-w-2xl hero-md:mx-0 3xl:mx-auto!">
+          <p className="font-slab font-bold text-2xl text-white sm:text-3xl mb-2">
+            Washoe County Job Fair
+          </p>
           <p className="font-slab text-2xl text-white sm:text-3xl">
             Northern Nevada&rsquo;s Largest
           </p>
