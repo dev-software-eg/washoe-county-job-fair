@@ -13,7 +13,7 @@ export default function Hero() {
           className="h-62 w-auto object-contain"
         />
       </div>
-      <div className="hidden hero-md:absolute hero-md:top-30 hero-md:-right-1 hero-md:z-0 hero-md:block hero-md:w-72">
+      <div className="hidden hero-md:absolute hero-md:top-35 hero-md:-right-1 hero-md:z-0 hero-md:block hero-md:w-72">
         <Image
           src={signPostImage}
           alt="Signpost pointing to industries hiring: health care, education, mining, skilled trades, manufacturing, logistics, hospitality, government"
