@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto, Roboto_Slab } from "next/font/google";
 import { VercelToolbar } from "@vercel/toolbar/next";
 import { Analytics } from "@vercel/analytics/next"
+import { GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
 
 const roboto = Roboto({
@@ -48,12 +49,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const shouldInjectToolbar = process.env.NODE_ENV === "development";
+  // VERCEL_ENV (not NODE_ENV) is unset locally and "preview" on Preview
+  // deploys, so this only fires GTM on the real Production deployment.
+  const isProd = process.env.VERCEL_ENV === "production";
 
   return (
     <html
       lang="en"
       className={`${roboto.variable} ${robotoSlab.variable} h-full antialiased`}
     >
+      {isProd && <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID!} />}
       <body className="min-h-screen flex flex-col font-sans">
         {children}
         <Analytics />
