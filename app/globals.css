@@ -18,7 +18,16 @@
   --font-sans: var(--font-roboto);
 }
 
+html,
 body {
-  background: var(--color-brand-blue);
+  overscroll-behavior-y: none;
+}
+
+body {
+  background: linear-gradient(
+    to bottom,
+    var(--color-brand-blue),
+    var(--color-brand-dark)
+  );
   color: var(--color-brand-light);
 }

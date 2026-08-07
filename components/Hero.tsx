@@ -7,6 +7,7 @@ export default function Hero() {
       <div className="relative z-0 mx-auto mt-5 block w-40 hero-md:absolute hero-md:mt-0 hero-md:mx-0 hero-md:top-5 hero-md:right-48 hero-md:w-72 3xl:top-40! 3xl:left-30! 3xl:right-auto!">
         <Image
           src="/logos/wc-seal.png"
+          loading="eager"
           alt="Washoe County seal"
           width={598}
           height={598}

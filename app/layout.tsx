@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Roboto, Roboto_Slab } from "next/font/google";
 import { VercelToolbar } from "@vercel/toolbar/next";
 import { Analytics } from "@vercel/analytics/next"
@@ -23,6 +23,11 @@ const description =
 
 // Update NEXT_PUBLIC_SITE_URL once the production domain is assigned.
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com";
+
+export const viewport: Viewport = {
+  themeColor: "#033b4c",
+  viewportFit: "cover",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -59,7 +64,7 @@ export default function RootLayout({
       className={`${roboto.variable} ${robotoSlab.variable} h-full antialiased`}
     >
       {isProd && <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID!} />}
-      <body className="min-h-screen flex flex-col font-sans">
+      <body className="min-h-dvh flex flex-col font-sans">
         {isProd && (
           // next/third-parties' GoogleTagManager only injects the init
           // script — GTM's noscript fallback isn't part of that component,
