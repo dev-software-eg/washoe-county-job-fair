@@ -59,7 +59,7 @@ export default function RootLayout({
       className={`${roboto.variable} ${robotoSlab.variable} h-full antialiased`}
     >
       {isProd && <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID!} />}
-      <body className="min-h-screen flex flex-col font-sans">
+      <body className="min-h-dvh flex flex-col font-sans">
         {isProd && (
           // next/third-parties' GoogleTagManager only injects the init
           // script — GTM's noscript fallback isn't part of that component,
