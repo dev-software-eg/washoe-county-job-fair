@@ -26,6 +26,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com";
 
 export const viewport: Viewport = {
   themeColor: "#033b4c",
+  viewportFit: "cover",
 };
 
 export const metadata: Metadata = {

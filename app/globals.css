@@ -24,6 +24,10 @@ body {
 }
 
 body {
-  background: var(--color-brand-blue);
+  background: linear-gradient(
+    to bottom,
+    var(--color-brand-blue),
+    var(--color-brand-dark)
+  );
   color: var(--color-brand-light);
 }
