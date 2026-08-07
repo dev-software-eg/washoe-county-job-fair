@@ -18,6 +18,11 @@
   --font-sans: var(--font-roboto);
 }
 
+html,
+body {
+  overscroll-behavior-y: none;
+}
+
 body {
   background: var(--color-brand-blue);
   color: var(--color-brand-light);
