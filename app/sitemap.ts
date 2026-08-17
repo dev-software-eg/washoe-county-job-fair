@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
-// Update NEXT_PUBLIC_SITE_URL once the production domain is assigned.
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com";
+const baseUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.washoecountyjobfair.org";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
