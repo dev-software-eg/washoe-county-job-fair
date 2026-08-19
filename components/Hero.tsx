@@ -1,10 +1,11 @@
 import Image from "next/image";
 import signPostImage from "../logos/road-sign.png";
+import Link from "next/link";
 
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-brand-blue px-6 pt-0 pb-15 hero-md:pt-15 hero-md:px-5 3xl:px-16! min-h-140">
-      <div className="relative z-0 mx-auto mt-5 block w-40 hero-md:absolute hero-md:mt-0 hero-md:mx-0 hero-md:top-5 hero-md:right-48 hero-md:w-72 3xl:top-40! 3xl:left-30! 3xl:right-auto!">
+      <div className="relative z-0 mx-auto mt-5 block w-40 hero-md:absolute hero-md:mt-0 hero-md:mx-0 hero-md:top-15 hero-md:right-48 hero-md:w-72 3xl:top-55! 3xl:left-30! 3xl:right-auto!">
         <Image
           src="/logos/wc-seal.png"
           loading="eager"
@@ -14,7 +15,7 @@ export default function Hero() {
           className="h-62 w-auto object-contain"
         />
       </div>
-      <div className="hidden hero-md:absolute hero-md:top-35 hero-md:-right-1 hero-md:z-0 hero-md:block hero-md:w-72">
+      <div className="hidden hero-md:absolute hero-md:top-60 hero-md:-right-1 hero-md:z-0 hero-md:block hero-md:w-72">
         <Image
           src={signPostImage}
           alt="Signpost pointing to industries hiring: health care, education, mining, skilled trades, manufacturing, logistics, hospitality, government"
@@ -66,7 +67,7 @@ export default function Hero() {
           </h2>
 
           <div>
-            <h3 className="mt-6 text-lg font-bold text-brand-light sm:text-xl lg:text-2xl pt-4">
+            <h3 className="mt-6 text-lg font-bold text-brand-light sm:text-xl lg:text-2xl">
               For more information, contact:
             </h3>
             <span className="text-lg text-brand-light sm:text-lg lg:text-xl block pt-2">
@@ -87,6 +88,14 @@ export default function Hero() {
               </a>
             </span>
           </div>
+          <Link
+            className="mt-12 inline-block px-8 py-4 cursor-pointer rounded-full font-slab text-lg font-bold text-brand-dark bg-brand-yellow transition-colors hover:bg-white sm:text-xl lg:text-2xl"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://washoecountyjobfair.eventbrite.com/"
+          >
+            Register Now
+          </Link>
         </div>
       </div>
     </section>
