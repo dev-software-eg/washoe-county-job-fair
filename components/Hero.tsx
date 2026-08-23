@@ -5,6 +5,16 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-brand-blue px-6 pt-0 pb-15 hero-md:pt-15 hero-md:px-5 3xl:px-16! min-h-140">
+      <div className="absolute inset-x-0 top-1/2 z-20 flex h-1/3 -translate-y-1/2 flex-col items-center justify-center gap-4 bg-red-600/95 px-4 py-8 text-center sm:px-8">
+        <h2 className="font-slab text-2xl font-extrabold uppercase leading-tight text-white sm:text-4xl lg:text-5xl">
+          Event Postponed
+          <br />
+          Due to Hawk Fire
+        </h2>
+        <p className="font-slab text-lg font-bold text-white sm:text-2xl lg:text-3xl">
+          Please Stay Safe. New Date Coming Soon.
+        </p>
+      </div>
       <div className="relative z-0 mx-auto mt-5 block w-40 hero-md:absolute hero-md:mt-0 hero-md:mx-0 hero-md:top-15 hero-md:right-48 hero-md:w-72 3xl:top-55! 3xl:left-30! 3xl:right-auto!">
         <Image
           src="/logos/wc-seal.png"
