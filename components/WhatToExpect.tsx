@@ -4,6 +4,81 @@ type ExpectItem = {
   body: string | React.ReactNode;
 };
 
+// Plain-text mirror of the accordion copy below, kept as the single source
+// of truth for the FAQPage JSON-LD emitted in app/page.tsx.
+export const FAQ_ITEMS: { question: string; answer: string }[] = [
+  {
+    question: "How should job seekers prepare for the job fair?",
+    answer:
+      "Visit an EmployNV Career Hub for help optimizing your resume — locations at Reno (4001 S Virginia St #8), Sparks (2281 Pyramid Way), Fernley (1320 W Newlands Dr), and Carson City (1929 N Carson St). Also attend the Career Readiness Fair on August 12, 2026 at the Reno Town Mall to connect with community resources.",
+  },
+  {
+    question: "What is the sign-in process at the job fair?",
+    answer:
+      "Employers follow up directly with candidates they're interested in. Do not sign in for someone else. If a friend or peer couldn't attend, encourage them to visit their nearest EmployNV Career Hub or explore opportunities online at www.EmployNV.gov.",
+  },
+  {
+    question: "How should job seekers engage with employers at the fair?",
+    answer:
+      "Share a copy of your resume, ask about current openings, and express your interests and career goals. It's a great opportunity to build relationships that could lead to future employment.",
+  },
+  {
+    question: "How do job seekers register at the event?",
+    answer:
+      "Register at the EmployNV tables at entry. Scan the QR code there to get the Open Jobs list, which includes participating employers and their available positions.",
+  },
+  {
+    question: "Should job seekers treat the job fair like an interview?",
+    answer:
+      "Yes. You only get one chance to make a first impression, so dress professionally, be prepared, and stay focused.",
+  },
+  {
+    question: "How many resumes should job seekers bring?",
+    answer:
+      "Bring plenty of updated resumes. If you need help creating or printing resumes, visit the Resource Center upstairs at the EmployNV Career Hub.",
+  },
+  {
+    question: "How can job seekers make the best impression at the job fair?",
+    answer:
+      "Smile, show genuine interest, maintain eye contact, and be confident — the goal is to leave a lasting impression that leads to a future interview.",
+  },
+  {
+    question: "When can employers set up their tables?",
+    answer:
+      "Facilities are open for setup Wednesday, October 21 from 10am–1pm, and Thursday, October 22 from 8:30am until the event starts. Employers receive their table number at sign-in; tables are 8 feet with two chairs, and employers should bring their own tablecloth, display items, and promotional materials. EmployNV staff will greet employers and assist with setup, and circulate throughout the event for support.",
+  },
+  {
+    question: "Will there be power or Wi-Fi for employer tables?",
+    answer:
+      "Power and Wi-Fi cannot be guaranteed. Employers planning to use a laptop should bring a hotspot. Printers will not be available onsite.",
+  },
+  {
+    question: "Is there a job opening requirement for employers?",
+    answer:
+      "Yes. Career seekers receive a list of employers with current job openings, so employers must provide at least one job opening to EmployNV.gov before the event — failure to do so could result in removal from the event.",
+  },
+  {
+    question: "Can employers conduct on-site interviews?",
+    answer:
+      "Yes, space is provided for employers to conduct interviews with candidates at the event if desired.",
+  },
+  {
+    question: "What about interview follow-up after the job fair?",
+    answer:
+      "The career fair aims to facilitate on-site interviews where possible. If follow-up interviews will happen at an employer's own location, applicants should be advised of that.",
+  },
+  {
+    question: "How long should employer representatives stay at the event?",
+    answer:
+      "Employer representatives are asked to remain for the full duration of the career fair. Bringing food and drinks to stay comfortable throughout the event is encouraged.",
+  },
+  {
+    question: "Is there a survey for employers after the event?",
+    answer:
+      "Yes, employers are asked to complete a brief survey at the end of the event. Feedback helps improve future events for both employers and job seekers.",
+  },
+];
+
 const JOB_SEEKER_ITEMS: ExpectItem[] = [
   {
     index: "1",
@@ -161,10 +236,10 @@ const EMPLOYER_SETUP: ExpectItem = {
         <div>
           <div> Facilities will be open:</div>
           <div>
-            <strong>Sunday, August 23 | 10am–1pm</strong>
+            <strong>Wednesday, October 21 | 10am–1pm</strong>
           </div>
           <div>
-            <strong>Monday, August 24 | 8:30am until event start</strong>
+            <strong>Thursday, October 22 | 8:30am until event start</strong>
           </div>
           <br />
         </div>

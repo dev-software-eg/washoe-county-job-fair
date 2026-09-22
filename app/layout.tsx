@@ -3,6 +3,7 @@ import { Roboto, Roboto_Slab } from "next/font/google";
 import { VercelToolbar } from "@vercel/toolbar/next";
 import { Analytics } from "@vercel/analytics/next"
 import { GoogleTagManager } from "@next/third-parties/google";
+import AiReferralTracker from "@/components/AiReferralTracker";
 import "./globals.css";
 
 const roboto = Roboto({
@@ -17,9 +18,9 @@ const robotoSlab = Roboto_Slab({
   weight: ["400", "700"],
 });
 
-const title = "No-Cost Career Fair | Washoe County | Aug 24, 2026";
+const title = "No-Cost Career Fair | Washoe County | Oct 22, 2026";
 const description =
-  "Northern Nevada's largest no-cost career fair. Monday, August 24, 2026, 11am–2pm at the Reno-Sparks Convention Center. 90+ employers hiring on the spot.";
+  "Northern Nevada's largest no-cost career fair. Thursday, October 22, 2026, 11am–2pm at the Reno-Sparks Convention Center. 90+ employers hiring on the spot.";
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.washoecountyjobfair.org";
@@ -35,6 +36,11 @@ export const metadata: Metadata = {
   description,
   alternates: {
     canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
   },
   openGraph: {
     title,
@@ -84,6 +90,7 @@ export default function RootLayout({
         )}
         {children}
         <Analytics />
+        <AiReferralTracker />
         {shouldInjectToolbar && <VercelToolbar />}
       </body>
     </html>
