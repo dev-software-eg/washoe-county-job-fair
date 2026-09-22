@@ -51,7 +51,7 @@ export default function Hero() {
           </div>
 
           <p className="mt-6 text-xl font-bold text-brand-yellow sm:text-2xl lg:text-3xl">
-            MONDAY, AUGUST 24, 2026{" "}
+            THURSDAY, OCTOBER 22, 2026{" "}
             <span className="font-normal">| 11am&ndash;2pm</span>
           </p>
 

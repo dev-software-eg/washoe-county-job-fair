@@ -45,7 +45,7 @@ export const FAQ_ITEMS: { question: string; answer: string }[] = [
   {
     question: "When can employers set up their tables?",
     answer:
-      "Facilities are open for setup Sunday, August 23 from 10am–1pm, and Monday, August 24 from 8:30am until the event starts. Employers receive their table number at sign-in; tables are 8 feet with two chairs, and employers should bring their own tablecloth, display items, and promotional materials. EmployNV staff will greet employers and assist with setup, and circulate throughout the event for support.",
+      "Facilities are open for setup Wednesday, October 21 from 10am–1pm, and Thursday, October 22 from 8:30am until the event starts. Employers receive their table number at sign-in; tables are 8 feet with two chairs, and employers should bring their own tablecloth, display items, and promotional materials. EmployNV staff will greet employers and assist with setup, and circulate throughout the event for support.",
   },
   {
     question: "Will there be power or Wi-Fi for employer tables?",
@@ -236,10 +236,10 @@ const EMPLOYER_SETUP: ExpectItem = {
         <div>
           <div> Facilities will be open:</div>
           <div>
-            <strong>Sunday, August 23 | 10am–1pm</strong>
+            <strong>Wednesday, October 21 | 10am–1pm</strong>
           </div>
           <div>
-            <strong>Monday, August 24 | 8:30am until event start</strong>
+            <strong>Thursday, October 22 | 8:30am until event start</strong>
           </div>
           <br />
         </div>

@@ -18,9 +18,9 @@ const robotoSlab = Roboto_Slab({
   weight: ["400", "700"],
 });
 
-const title = "No-Cost Career Fair | Washoe County | Postponed";
+const title = "No-Cost Career Fair | Washoe County | Oct 22, 2026";
 const description =
-  "Northern Nevada's largest no-cost career fair has been postponed due to the Hawk Fire. A new date is coming soon. 90+ employers hiring on the spot at the Reno-Sparks Convention Center.";
+  "Northern Nevada's largest no-cost career fair. Thursday, October 22, 2026, 11am–2pm at the Reno-Sparks Convention Center. 90+ employers hiring on the spot.";
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.washoecountyjobfair.org";

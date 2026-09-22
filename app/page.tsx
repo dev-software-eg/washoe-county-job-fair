@@ -10,11 +10,11 @@ const eventJsonLd = {
   "@type": "Event",
   name: "Northern Nevada's Largest No-Cost Career Fair",
   description:
-    "Northern Nevada's largest no-cost career fair has been postponed due to the Hawk Fire. A new date has not yet been set. 90+ employers hiring on the spot, on-site career coaching, and free job training resources.",
-  startDate: "2026-08-24T11:00:00-07:00",
-  endDate: "2026-08-24T14:00:00-07:00",
+    "Northern Nevada's largest no-cost career fair. Thursday, October 22, 2026, 11am–2pm at the Reno-Sparks Convention Center. 90+ employers hiring on the spot, on-site career coaching, and free job training resources.",
+  startDate: "2026-10-22T11:00:00-07:00",
+  endDate: "2026-10-22T14:00:00-07:00",
   eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-  eventStatus: "https://schema.org/EventPostponed",
+  eventStatus: "https://schema.org/EventRescheduled",
   previousStartDate: "2026-08-24",
   location: {
     "@type": "Place",
