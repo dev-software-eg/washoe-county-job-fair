@@ -98,12 +98,6 @@ const JOB_SEEKER_ITEMS: ExpectItem[] = [
                 <li>Carson - 1929 N Carson St, Carson City, NV 89701</li>
               </ul>
             </li>
-            <li className="list-disc mt-2">
-              Attend the <strong>Career Readiness Fair</strong> on August 12,
-              2026 at the Reno Town Mall (4001 S. Virgina St., Reno, NV 89502)
-              to connect with community resources and improve your chances of
-              finding the perfect job.
-            </li>
           </ul>
         </div>
       </Collapse>
