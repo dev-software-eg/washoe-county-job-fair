@@ -233,14 +233,19 @@ const EMPLOYER_SETUP: ExpectItem = {
     <Collapse title="Setup">
       <div style={{ whiteSpace: "pre-line" }}>
         <div>Please set up your table before the event.</div>
+        <br />
         <div>
           <div> Facilities will be open:</div>
+
           <div>
+            <strong>TBD</strong>
+          </div>
+          {/* <div>
             <strong>Wednesday, October 21 | 10am–1pm</strong>
           </div>
           <div>
             <strong>Thursday, October 22 | 8:30am until event start</strong>
-          </div>
+          </div> */}
           <br />
         </div>
         <div>
