@@ -20,7 +20,7 @@ const robotoSlab = Roboto_Slab({
 
 const title = "No-Cost Career Fair | Washoe County | Oct 22, 2026";
 const description =
-  "Northern Nevada's largest no-cost career fair. Thursday, October 22, 2026, 11am–2pm at the Reno-Sparks Convention Center. 90+ employers hiring on the spot.";
+  "Northern Nevada's largest no-cost career fair. 3,600+ job openings from 90+ employers hiring on the spot. Thursday, October 22, 2026, 11am–2pm at the Reno-Sparks Convention Center.";
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.washoecountyjobfair.org";
