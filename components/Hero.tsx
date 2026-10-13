@@ -7,7 +7,7 @@ export default function Hero() {
     <section className="relative overflow-hidden bg-brand-blue px-6 pb-15 hero-md:px-5 3xl:px-16! min-h-140">
       <div className="relative z-20 -mx-6 hero-md:-mx-5 3xl:-mx-16! flex flex-col items-center justify-center gap-4 bg-brand-yellow px-4 py-2 text-center sm:px-8">
         <h2 className="font-slab text-2xl font-extrabold uppercase leading-tight text-brand-dark sm:text-3xl lg:text-4xl">
-          Updated Event: Rescheduled due to Hawk Fire
+          3,600+ job openings!
         </h2>
       </div>
       <div className="relative pt-0 hero-md:pt-15">
